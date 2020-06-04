@@ -13,7 +13,7 @@ namespace Opdracht_ASP.NET_Core.Models
 
         public test()
         {
-            dinkArray ="dink";
+            dinkArray ="donk"; // dit komt in het text veld
         }
     }
 

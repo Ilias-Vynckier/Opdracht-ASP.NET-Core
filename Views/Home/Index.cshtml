@@ -1,6 +1,8 @@
 ﻿@model test
 @{
     ViewData["Title"] = "Home Page";
+    string[] dinkArray = { "dink", "dink2", "dink3" }; //array 
+    // om items toe te voegen aan een array moet men geen array gebruiken maar een list.
 
 }
 
@@ -10,14 +12,15 @@
 
         
         @{ 
-            
-          <p>dink: @test.ToString</p>
+            foreach(var x in dinkArray)
+            {
+                <span>@x</span>
+               
+            }
         }
-
-
-
     </div>
-<form method="post">
+ <!--form -->
+<form method="post"> 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <label asp-for="dinkArray"></label>

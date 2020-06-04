@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DocumentFormat.OpenXml.Office2010.Excel;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Opdracht_ASP.NET_Core.Models;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace Opdracht_ASP.NET_Core.Controllers
 {
@@ -24,6 +26,14 @@ namespace Opdracht_ASP.NET_Core.Controllers
         {
             return View();
         }
+
+        public test dinktest { get; set; }
+
+        /*public async Task OnPost()
+        {
+            var itemtest = new test();
+            dinktest = test.dinkArray;
+        }*/
 
 
 

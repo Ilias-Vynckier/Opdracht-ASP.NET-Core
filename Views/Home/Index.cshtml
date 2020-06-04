@@ -1,8 +1,8 @@
-﻿@{
+﻿@model Index
+@{
     ViewData["Title"] = "Home Page";
     string[] dinkArray = { "dink", "dink2", "dink3" };
-
-    
+  
 }
 
 
@@ -15,3 +15,16 @@
         }
 
     </div>
+<form>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <label asp-for="dinkArray"></label>
+            <input asp-for="dinkArray" type="text" class="from-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn btn-primary">submit</button>
+        </div>
+    </div>
+</form>

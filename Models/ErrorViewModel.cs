@@ -1,8 +1,6 @@
-using System;
-
 namespace Opdracht_ASP.NET_Core.Models
 {
-    public class IndexViewModel
+    public class ErrorViewModel
     {
         public string RequestId { get; set; }
 

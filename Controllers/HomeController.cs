@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Opdracht_ASP.NET_Core.Models;
+using System.Diagnostics;
 
 namespace Opdracht_ASP.NET_Core.Controllers
 {
@@ -20,6 +16,7 @@ namespace Opdracht_ASP.NET_Core.Controllers
 
         public IActionResult Index()
         {
+            ViewData.Model = new test();
             return View();
         }
 
@@ -27,6 +24,8 @@ namespace Opdracht_ASP.NET_Core.Controllers
         {
             return View();
         }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

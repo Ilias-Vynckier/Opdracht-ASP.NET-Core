@@ -1,21 +1,23 @@
-﻿@model Index
+﻿@model test
 @{
     ViewData["Title"] = "Home Page";
-    string[] dinkArray = { "dink", "dink2", "dink3" };
-  
+
 }
 
 
     <div class="text-center">
         <h1 class="display-4">Dink</h1>
 
-        @foreach (string dink in dinkArray)
-        {
-            <span>@dink, </span>
+        
+        @{ 
+            
+          <p>dink: @test.ToString</p>
         }
 
+
+
     </div>
-<form>
+<form method="post">
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <label asp-for="dinkArray"></label>
@@ -28,3 +30,6 @@
         </div>
     </div>
 </form>
+
+
+

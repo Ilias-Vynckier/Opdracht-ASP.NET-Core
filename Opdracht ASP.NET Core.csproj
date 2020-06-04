@@ -5,4 +5,8 @@
     <RootNamespace>Opdracht_ASP.NET_Core</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.11.0" />
+  </ItemGroup>
+
 </Project>
